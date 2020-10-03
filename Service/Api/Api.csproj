@@ -2,20 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable></Nullable>
+    <AssemblyName>ServiceApi.Api</AssemblyName>
+    <RootNamespace>ServiceApi.Api</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Api\Api.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Api\ServiceApi.Api.xml</DocumentationFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Api.Model\Api.Model.csproj" />
+    <ProjectReference Include="..\Business\Business.csproj" />
+    <ProjectReference Include="..\DataAccess.Implementation\DataAccess.Implementation.csproj" />
   </ItemGroup>
 
 

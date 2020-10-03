@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ServiceApi.Config
+namespace ServiceApi.Api.Config
 {
     internal static class Versioning
     {

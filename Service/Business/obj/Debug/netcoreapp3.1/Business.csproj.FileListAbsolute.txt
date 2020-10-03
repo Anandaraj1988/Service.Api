@@ -1,0 +1,12 @@
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\bin\Debug\netcoreapp3.1\ServiceApi.Business.deps.json
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\bin\Debug\netcoreapp3.1\ServiceApi.Business.dll
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\bin\Debug\netcoreapp3.1\ServiceApi.Business.pdb
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\obj\Debug\netcoreapp3.1\Business.csprojAssemblyReference.cache
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\obj\Debug\netcoreapp3.1\ServiceApi.Business.dll
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\obj\Debug\netcoreapp3.1\ServiceApi.Business.pdb
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Interface.dll
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Interface.pdb
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache

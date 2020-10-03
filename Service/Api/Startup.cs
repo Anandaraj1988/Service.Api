@@ -3,14 +3,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
-using ServiceApi.Config;
-using System;
-using System.IO;
-using System.Reflection;
 
-namespace ServiceApi
+namespace ServiceApi.Api
 {
+    using Config;
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -24,22 +20,10 @@ namespace ServiceApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.ConfigureDependencyInjection(this.Configuration);
             services.ConfigureVersioning();
             // Register the Swagger generator, defining 1 or more Swagger documents
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Version = "v1",
-                    Title = "Service API",
-                    Description = "Service Provider",
-
-                });
-
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);
-            });
+            services.ConfigureSwagger();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,7 +39,7 @@ namespace ServiceApi
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Service API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Service_API_V1");
             });
 
 

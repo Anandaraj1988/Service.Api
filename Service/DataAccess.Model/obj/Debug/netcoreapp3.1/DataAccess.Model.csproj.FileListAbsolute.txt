@@ -1,0 +1,9 @@
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Model\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Model.deps.json
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Model\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Model.dll
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Model\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Model.pdb
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Model\obj\Debug\netcoreapp3.1\DataAccess.Model.AssemblyInfoInputs.cache
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Model\obj\Debug\netcoreapp3.1\DataAccess.Model.AssemblyInfo.cs
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Model\obj\Debug\netcoreapp3.1\DataAccess.Model.csproj.CoreCompileInputs.cache
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Model\obj\Debug\netcoreapp3.1\ServiceApi.DataAccess.Model.dll
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Model\obj\Debug\netcoreapp3.1\ServiceApi.DataAccess.Model.pdb
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Model\obj\Debug\netcoreapp3.1\DataAccess.Model.csprojAssemblyReference.cache
