@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3Ocu7/KEAGYkH1FOUmAmeEdYC+VAxQuGACyWQeNJDoqiRO4AalZso/Tl+cEdOrpmNAfHPHt1MrcH9jdFXzQYgw==",
+  "dgSpecHash": "vGYCp1EPQv6rUE9hf2hbKW9mOKttUKNEhg3erIvp+ASQ0SpTD8tlv/ZyhzJNeDcrNVHtO+hSpbBdoOW9rtlsIg==",
   "success": true,
   "projectFilePath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anand\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\anand\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",

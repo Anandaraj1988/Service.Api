@@ -1,9 +1,13 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ServiceApi.DataAccess.Interface
 {
+    using Model;
+
     public interface IUserDataProvider
     {
-        Task<bool> CreateUserAsync(string userName, string password, string domain, int userRole);
+        Task<IEnumerable<User>> CreateUserAsync(string userName, string password, string domain, int userRole);
+        Task<LoginResult> UserLoginAsync(string userName, string password);
     }
 }

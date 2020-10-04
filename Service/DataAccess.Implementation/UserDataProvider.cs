@@ -3,8 +3,11 @@ using Microsoft.Extensions.Options;
 using ServiceApi.Business.Common;
 using ServiceApi.DataAccess.Interface;
 using ServiceApi.DataAccess.Model;
+using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace ServiceApi.DataAccess.Implementation
@@ -19,23 +22,52 @@ namespace ServiceApi.DataAccess.Implementation
         }
 
         #region User Creation Section
-        public async Task<bool> CreateUserAsync(string userName, string password, string domain, int userRole)
+        public async Task<IEnumerable<User>> CreateUserAsync(string userName, string password, string domain, int userRole)
         {
             using (var connection = new SqlConnection(this._settings.ConnectionString))
             {
                 await connection.OpenAsync();
-                var result = await connection.QueryAsync<User>(
-                    "contacts.dbo.createuser",
+                return await connection.QueryAsync<User>(
+                    "Contacts.dbo.CreateUser",
                     new
                     {
+                        UserID = Guid.Empty,
                         UserName = userName,
                         Password = password,
                         UserRole = userRole,
-                        Domain = domain
+                        Domain = domain,
+                        EmailID = string.Empty
                     },
                     commandType: CommandType.StoredProcedure);
-                return true;
             }
+        }
+
+        public async Task<LoginResult> UserLoginAsync(string userName, string password)
+        {
+            string userID = string.Empty;
+            using (var connection = new SqlConnection(this._settings.ConnectionString))
+            {
+                await connection.OpenAsync();
+                var result = await connection.QueryAsync<User>(
+                    "Contacts.dbo.CheckRegisteredUser",
+                    new
+                    {
+                        UserName = userName,
+                        Password = password
+                    },
+                    commandType: CommandType.StoredProcedure);
+
+                if (result != null)
+                {
+                    userID = result.FirstOrDefault().UserID.ToString();
+
+                }
+            }
+            return new LoginResult()
+            {
+                IsAuthenticated = !string.IsNullOrEmpty(userID),
+                UserID = userID
+            };
         }
         #endregion
     }

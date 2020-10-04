@@ -173,6 +173,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj": {
+                "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj"
+              },
               "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj": {
                 "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj"
               }
@@ -342,7 +345,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj": {
+                "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

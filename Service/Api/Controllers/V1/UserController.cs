@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace ServiceApi.Api.Controllers.V1
 {
@@ -20,16 +21,32 @@ namespace ServiceApi.Api.Controllers.V1
             this.serviceProvider = _serviceProvider;
         }
 
-        //[HttpGet("ShowName")]
-        //public string DisplayName()
-        //{
-        //    return "Its Anandaraj";
-        //}
-
+        /// <summary>
+        /// CreateUser
+        /// </summary>
+        /// <param name="request">
+        /// CreateUserRequest
+        /// UserName => string, 
+        /// Password => string,
+        /// Domain => string, 
+        /// UserRole  => int => 100, 101, 102
+        /// </param>
+        /// <returns>Created User</returns>
         [HttpPost("AddUser")]
-        public async Task<ActionResult<bool>> CreateUser([FromQuery]CreateUserRequest request)
-        {
-            return await serviceProvider.CreateUserAsync(request.UserName, request.Password, request.Domain, request.UserRole);
-        }
+        public async Task<IEnumerable<User>> CreateUser([FromQuery] CreateUserRequest request) => 
+            await serviceProvider.CreateUserAsync(request.UserName, request.Password, request.Domain, request.UserRole);
+
+        /// <summary>
+        /// LoginRequest
+        /// </summary>
+        /// <param name="request">
+        /// LoginRequest
+        /// UserName => string, 
+        /// Password => string,
+        /// </param>
+        /// <returns>Return true/false</returns>
+        [HttpGet("Login")]
+        public async Task<LoginResult> UserLogin([FromQuery] LoginRequest request) => 
+            await serviceProvider.UserLoginAsync(request.UserName, request.Password);
     }
 }

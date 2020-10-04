@@ -14,3 +14,5 @@ C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Implementation\
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Implementation\obj\Debug\netcoreapp3.1\ServiceApi.DataAccess.Implementation.pdb
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Implementation\bin\Debug\netcoreapp3.1\ServiceApi.Business.dll
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Implementation\bin\Debug\netcoreapp3.1\ServiceApi.Business.pdb
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Implementation\bin\Debug\netcoreapp3.1\ServiceApi.Api.Model.dll
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Implementation\bin\Debug\netcoreapp3.1\ServiceApi.Api.Model.pdb

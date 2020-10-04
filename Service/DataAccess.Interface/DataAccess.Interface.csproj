@@ -6,4 +6,8 @@
     <RootNamespace>ServiceApi.DataAccess.Interface</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess.Model\DataAccess.Model.csproj" />
+  </ItemGroup>
+
 </Project>

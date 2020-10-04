@@ -1,10 +1,12 @@
 ﻿using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace ServiceApi.Business.Implementation
 {
-    using DataAccess.Interface;
-    using Business.Interface;
+    using Interface;
     using AutoMapper;
+    using DataAccess.Interface;
+    using Api.Model.V1;
 
     public class UserDataService : IUserDataService
     {
@@ -17,10 +19,16 @@ namespace ServiceApi.Business.Implementation
             userDataProvider = _UserDataProvider;
         }
 
-        public async Task<bool> CreateUserAsync(string userName, string password, string domain, int userRole)
+        public async Task<IEnumerable<User>> CreateUserAsync(string userName, string password, string domain, int userRole)
         {
             var result = await userDataProvider.CreateUserAsync(userName, password, domain, userRole);
-            return true;
+            return mapper.Map<IEnumerable<User>>(result);
+        }
+
+        public async Task<LoginResult> UserLoginAsync(string userName, string password)
+        {
+            var result = await userDataProvider.UserLoginAsync(userName, password);
+            return mapper.Map<LoginResult>(result);
         }
     }
 }

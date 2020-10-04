@@ -1,11 +1,14 @@
-﻿namespace ServiceApi.Api.Model.V1
+﻿using System;
+using System.Runtime.Serialization;
+
+namespace ServiceApi.Api.Model.V1
 {
     public class User
     {
-        public int ID { get; set; }
+        public Guid UserID { get; set; }
         public string UserName { get; set; }
-        public string Password { get; set; }
-        public string Roles { get; set; }
+        public string UserRole { get; set; }
         public string Email { get; set; }
+        public string Domain { get; set; }
     }
 }

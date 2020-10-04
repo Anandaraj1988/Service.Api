@@ -10,3 +10,7 @@ C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\bin\Debug\netcore
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Interface.pdb
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\bin\Debug\netcoreapp3.1\ServiceApi.Api.Model.dll
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Model.dll
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\bin\Debug\netcoreapp3.1\ServiceApi.Api.Model.pdb
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Model.pdb

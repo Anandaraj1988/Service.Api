@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lzazj2wW4UlmHW7KCpu2ITEDDXsSzoiHIMtSxqH/RiZ7HTk/PXhRkNnSUIPyUvlvjUk+gBmMUHJkwnUA74bUPg==",
+  "dgSpecHash": "tXQ6xxrJ6Du4R1GlBmu8mUdnaE5bVXIAxmjtEQ2aMDSEHcjEMC4pfzmrh2zSJoDwqlvA6tGxQnbRfLG97WBWAA==",
   "success": true,
   "projectFilePath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Implementation\\DataAccess.Implementation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anand\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\anand\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\anand\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

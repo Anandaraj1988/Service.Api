@@ -1264,6 +1264,7 @@
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "4.1.1",
           "Microsoft.Extensions.Configuration.Binder": "3.1.8",
+          "ServiceApi.Api.Model": "1.0.0",
           "ServiceApi.DataAccess.Interface": "1.0.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "5.6.3"
         },
@@ -1293,11 +1294,17 @@
         },
         "runtime": {
           "bin/placeholder/ServiceApi.DataAccess.Implementation.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "ServiceApi.DataAccess.Interface/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ServiceApi.DataAccess.Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ServiceApi.DataAccess.Interface.dll": {}
         },

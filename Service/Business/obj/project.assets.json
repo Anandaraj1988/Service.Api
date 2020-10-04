@@ -15,6 +15,19 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -1078,14 +1091,40 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "ServiceApi.Api.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ServiceApi.Api.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServiceApi.Api.Model.dll": {}
+        }
+      },
       "ServiceApi.DataAccess.Interface/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ServiceApi.DataAccess.Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ServiceApi.DataAccess.Interface.dll": {}
         },
         "runtime": {
           "bin/placeholder/ServiceApi.DataAccess.Interface.dll": {}
+        }
+      },
+      "ServiceApi.DataAccess.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ServiceApi.DataAccess.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServiceApi.DataAccess.Model.dll": {}
         }
       }
     }
@@ -1105,6 +1144,19 @@
         "lib/net461/AutoMapper.xml",
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+      "sha512": "szI4yeRIM7GWe9JyekW0dKYehPB0t6M+I55fPeCebN6PhS7zQZa0eG3bgOnOx+eP3caSNoE7KEJs2rk7MLsh8w==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -4012,10 +4064,20 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "ServiceApi.Api.Model/1.0.0": {
+      "type": "project",
+      "path": "../Api.Model/Api.Model.csproj",
+      "msbuildProject": "../Api.Model/Api.Model.csproj"
+    },
     "ServiceApi.DataAccess.Interface/1.0.0": {
       "type": "project",
       "path": "../DataAccess.Interface/DataAccess.Interface.csproj",
       "msbuildProject": "../DataAccess.Interface/DataAccess.Interface.csproj"
+    },
+    "ServiceApi.DataAccess.Model/1.0.0": {
+      "type": "project",
+      "path": "../DataAccess.Model/DataAccess.Model.csproj",
+      "msbuildProject": "../DataAccess.Model/DataAccess.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4025,6 +4087,7 @@
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
       "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer >= 4.1.1",
       "Microsoft.Extensions.Configuration.Binder >= 3.1.8",
+      "ServiceApi.Api.Model >= 1.0.0",
       "ServiceApi.DataAccess.Interface >= 1.0.0",
       "Swashbuckle.AspNetCore.SwaggerGen >= 5.6.3"
     ]
@@ -4059,6 +4122,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj": {
+              "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj"
+            },
             "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj": {
               "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj"
             }

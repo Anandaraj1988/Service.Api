@@ -4,5 +4,29 @@
         <name>ServiceApi.Api</name>
     </assembly>
     <members>
+        <member name="M:ServiceApi.Api.Controllers.V1.UserController.CreateUser(ServiceApi.Api.Model.V1.CreateUserRequest)">
+            <summary>
+            CreateUser
+            </summary>
+            <param name="request">
+            CreateUserRequest
+            UserName => string, 
+            Password => string,
+            Domain => string, 
+            UserRole  => int => 100, 101, 102
+            </param>
+            <returns>Created User</returns>
+        </member>
+        <member name="M:ServiceApi.Api.Controllers.V1.UserController.UserLogin(ServiceApi.Api.Model.V1.LoginRequest)">
+            <summary>
+            LoginRequest
+            </summary>
+            <param name="request">
+            LoginRequest
+            UserName => string, 
+            Password => string,
+            </param>
+            <returns>Return true/false</returns>
+        </member>
     </members>
 </doc>
