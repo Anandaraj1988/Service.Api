@@ -6,7 +6,6 @@ namespace ServiceApi.Api.Controllers.V1
 {
     using Business.Interface;
     using Api.Model.V1;
-    using Business.Filters;
 
     [ApiVersion("1.0")]
     [Route("v{version:apiVersion}/[controller]")]
@@ -33,7 +32,7 @@ namespace ServiceApi.Api.Controllers.V1
         /// </param>
         /// <returns>Created User</returns>
         [HttpPost("AddUser")]
-        public async Task<IEnumerable<User>> CreateUser([FromQuery] CreateUserRequest request) => 
+        public async Task<IEnumerable<UserResult>> CreateUser([FromQuery] CreateUserRequest request) => 
             await serviceProvider.CreateUserAsync(request.UserName, request.Password, request.Domain, request.UserRole);
 
         /// <summary>
@@ -46,7 +45,7 @@ namespace ServiceApi.Api.Controllers.V1
         /// </param>
         /// <returns>Return true/false</returns>
         [HttpGet("Login")]
-        public async Task<LoginResult> UserLogin([FromQuery] LoginRequest request) => 
-            await serviceProvider.UserLoginAsync(request.UserName, request.Password);
+        public async Task<LoginResult> UserLogin([FromQuery] LoginRequest request) =>
+            await serviceProvider.UserLoginAsync(request.UserName, request.Password, request.Domain);
     }
 }

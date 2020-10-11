@@ -1,8 +1,5 @@
 ﻿using Dapper;
 using Microsoft.Extensions.Options;
-using ServiceApi.Business.Common;
-using ServiceApi.DataAccess.Interface;
-using ServiceApi.DataAccess.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace ServiceApi.DataAccess.Implementation
 {
+    using Business.Common;
+    using DataAccess.Interface;
+    using DataAccess.Model;
+
     public class UserDataProvider : IUserDataProvider
     {
         private DatabaseSettings _settings;
@@ -22,13 +23,13 @@ namespace ServiceApi.DataAccess.Implementation
         }
 
         #region User Creation Section
-        public async Task<IEnumerable<User>> CreateUserAsync(string userName, string password, string domain, int userRole)
+        public async Task<IEnumerable<UserResult>> CreateUserAsync(string userName, string password, string domain, int userRole)
         {
             using (var connection = new SqlConnection(this._settings.ConnectionString))
             {
                 await connection.OpenAsync();
-                return await connection.QueryAsync<User>(
-                    "Contacts.dbo.CreateUser",
+                return await connection.QueryAsync<UserResult>(
+                    "Admin.dbo.CreateUser",
                     new
                     {
                         UserID = Guid.Empty,
@@ -42,18 +43,19 @@ namespace ServiceApi.DataAccess.Implementation
             }
         }
 
-        public async Task<LoginResult> UserLoginAsync(string userName, string password)
+        public async Task<LoginResult> UserLoginAsync(string userName, string password, string domain)
         {
             string userID = string.Empty;
             using (var connection = new SqlConnection(this._settings.ConnectionString))
             {
                 await connection.OpenAsync();
                 var result = await connection.QueryAsync<User>(
-                    "Contacts.dbo.CheckRegisteredUser",
+                    "Admin.dbo.CheckRegisteredUser",
                     new
                     {
                         UserName = userName,
-                        Password = password
+                        Password = password,
+                        Domain = domain
                     },
                     commandType: CommandType.StoredProcedure);
 

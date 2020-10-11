@@ -4,6 +4,17 @@
         <name>ServiceApi.Api</name>
     </assembly>
     <members>
+        <member name="M:ServiceApi.Api.Controllers.V1.DomainController.CreateUser(ServiceApi.Api.Model.V1.CreateDomainRequest)">
+            <summary>
+            CreateDomain
+            </summary>
+            <param name="request">
+            CreateDomainRequest
+            Name => string, 
+            ApiKey => Guid
+            </param>
+            <returns>Created User</returns>
+        </member>
         <member name="M:ServiceApi.Api.Controllers.V1.UserController.CreateUser(ServiceApi.Api.Model.V1.CreateUserRequest)">
             <summary>
             CreateUser

@@ -1,9 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using ServiceApi.Business.Implementation;
-using ServiceApi.Business.Interface;
 
 namespace ServiceApi.Business
 {
+    using Business.Implementation;
+    using Business.Interface;
+
     public static class DependencyInjection
     {
         public static void AddBusinessInjection(this IServiceCollection services)
@@ -12,6 +13,7 @@ namespace ServiceApi.Business
 
             // Add business implementations
             services.AddTransient<IUserDataService, UserDataService>();
+            services.AddTransient<IDomainDataService, DomainDataService>();
         }
     }
 }

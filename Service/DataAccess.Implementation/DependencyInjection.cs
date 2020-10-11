@@ -8,6 +8,7 @@
         public static void AddDataAccessInjection(this IServiceCollection services)
         {
             services.AddTransient<IUserDataProvider, UserDataProvider>();
+            services.AddTransient<IDomainDataProvider, DomainDataProvider>();
         }
     }
 }

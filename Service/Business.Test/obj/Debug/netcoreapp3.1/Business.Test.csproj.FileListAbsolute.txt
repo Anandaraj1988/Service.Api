@@ -93,3 +93,4 @@ C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business.Test\obj\Debug\ne
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business.Test\obj\Debug\netcoreapp3.1\Business.Test.dll
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business.Test\obj\Debug\netcoreapp3.1\Business.Test.pdb
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business.Test\obj\Debug\netcoreapp3.1\Business.Test.genruntimeconfig.cache
+C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Business.Test\obj\Debug\netcoreapp3.1\Business.Test.csprojAssemblyReference.cache
