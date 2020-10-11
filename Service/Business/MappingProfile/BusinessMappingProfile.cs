@@ -37,7 +37,9 @@ namespace ServiceApi.Business.MappingProfile
             this.CreateMap<Data.LoginResult, BusinessV1.LoginResult>()
                 .ForMember(d => d.UserID, o => o.MapFrom(s => s.UserID))
                 .ForMember(d => d.IsAuthenticated, o => o.MapFrom(s => s.IsAuthenticated))
-                .ForMember(d => d.AccessToken, o => o.MapFrom(s => s.AccessToken));
+                .ForMember(d => d.AccessToken, o => o.MapFrom(s => s.AccessToken))
+                .ForMember(d => d.UserRole, o => o.MapFrom(s => s.UserRole))
+                .ForMember(d => d.UserRoleName, o => o.MapFrom(s => ((BusinessV1.Enum.UserRole)s.UserRole).GetDisplayName()));
         }
 
         private void GetDomainMapping()

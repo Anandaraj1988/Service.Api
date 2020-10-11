@@ -31,6 +31,9 @@ namespace ServiceApi.Business.Implementation
 
         public async Task<LoginResult> UserLoginAsync(string userName, string password, string domain)
         {
+            if (!string.IsNullOrEmpty(password))
+                password = Helper.EncryptPassword(password);
+
             var result = await userDataProvider.UserLoginAsync(userName, password, domain);
             return mapper.Map<LoginResult>(result);
         }

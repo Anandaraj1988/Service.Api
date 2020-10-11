@@ -6,16 +6,22 @@ CREATE PROCEDURE CheckRegisteredUser
 	@Domain varchar(50)
 AS
 BEGIN
-	DECLARE @Count int
-	SET @Count = (Select COUNT(*) from dbo.[User] WHERE UserName = @UserName and [Password] = @Password)
+	Declare @DomainID UNIQUEIDENTIFIER;
+	Declare @ApiKey uniqueIdentifier;
 
-	IF @Count = 0
+	IF @Domain <> '' AND @Domain IS NOT NULL
 	BEGIN
-		Select '';
+	SET @DomainID = (SELECT DomainID FROM Domain WHERE [Name] = @Domain)
+	SET @ApiKey = (SELECT ApiKey FROM dbo.[Domain] WHERE DomainID = @DomainID)
 	END
-	ELSE
+
+
+	IF @DomainID <> '00000000-0000-0000-0000-000000000000'
 	BEGIN
-		Select UserID From dbo.[User] WHERE UserName = @UserName and [Password] = @Password
+	 Select U.UserID, U.UserName, U.UserRole, @ApiKey as ApiKey 
+	 From dbo.[User] U JOIN dbo.[DomainUserMapping] DUM 
+	 ON U.UserID = DUM.UserID WHERE U.UserName = @UserName and U.[Password] = @Password
 	END
+
 END
 GO

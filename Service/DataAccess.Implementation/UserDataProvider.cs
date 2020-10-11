@@ -45,11 +45,10 @@ namespace ServiceApi.DataAccess.Implementation
 
         public async Task<LoginResult> UserLoginAsync(string userName, string password, string domain)
         {
-            string userID = string.Empty;
             using (var connection = new SqlConnection(this._settings.ConnectionString))
             {
                 await connection.OpenAsync();
-                var result = await connection.QueryAsync<User>(
+                var result = await connection.QueryAsync<AuthorizedUserResult>(
                     "Admin.dbo.CheckRegisteredUser",
                     new
                     {
@@ -59,17 +58,27 @@ namespace ServiceApi.DataAccess.Implementation
                     },
                     commandType: CommandType.StoredProcedure);
 
-                if (result != null)
+                if (result.Any())
                 {
-                    userID = result.FirstOrDefault().UserID.ToString();
-
+                    var user = result.FirstOrDefault();
+                    if (user == null) return null;
+                    return new LoginResult()
+                    {
+                        IsAuthenticated = !string.IsNullOrEmpty(Convert.ToString(user.UserID)),
+                        UserID = user.UserID,
+                        AccessToken = user.ApiKey,
+                        UserRole = user.UserRole
+                    };
                 }
+                else
+                    return new LoginResult()
+                    {
+                        IsAuthenticated = false,
+                        UserID = Guid.Empty,
+                        AccessToken = Guid.Empty,
+                        UserRole = 0
+                    };
             }
-            return new LoginResult()
-            {
-                IsAuthenticated = !string.IsNullOrEmpty(userID),
-                UserID = userID
-            };
         }
         #endregion
     }

@@ -11,7 +11,9 @@ namespace ServiceApi.Api.Model.V1
             [Display(Name = "Staff", Description = "Staff")]
             Staff = 101,
             [Display(Name = "Reader", Description = "Reader")]
-            Reader = 102
+            Reader = 102,
+            [Display(Name = "UnAuthorized", Description = "UnAuthorized")]
+            UnAuthorized = 0
         }
     }
 }

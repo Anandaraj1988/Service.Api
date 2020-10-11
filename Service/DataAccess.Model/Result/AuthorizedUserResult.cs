@@ -2,11 +2,11 @@
 
 namespace ServiceApi.DataAccess.Model
 {
-    public class LoginResult
+    public class AuthorizedUserResult
     {
-        public bool IsAuthenticated { get; set; }
         public Guid UserID { get; set; }
-        public Guid AccessToken { get; set; }
+        public string UserName { get; set; }
         public int UserRole { get; set; }
+        public Guid ApiKey { get; set; }
     }
 }
