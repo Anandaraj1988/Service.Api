@@ -7,6 +7,6 @@ namespace ServiceApi.Business.Interface
 
     public interface IDomainDataService
     {
-        Task<Domain> CreateDomainAsync(string name, Guid apiKey);
+        Task<Domain> CreateDomainAsync(CreateDomainRequest createDomainRequest);
     }
 }

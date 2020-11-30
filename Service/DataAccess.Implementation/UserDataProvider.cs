@@ -23,61 +23,29 @@ namespace ServiceApi.DataAccess.Implementation
         }
 
         #region User Creation Section
-        public async Task<IEnumerable<UserResult>> CreateUserAsync(string userName, string password, string domain, int userRole)
+        public async Task<IEnumerable<UserResult>> CreateUserAsync(CreateUserRequest createUserRequest)
         {
             using (var connection = new SqlConnection(this._settings.ConnectionString))
             {
                 await connection.OpenAsync();
                 return await connection.QueryAsync<UserResult>(
                     "Admin.dbo.CreateUser",
-                    new
-                    {
-                        UserID = Guid.Empty,
-                        UserName = userName,
-                        Password = password,
-                        UserRole = userRole,
-                        Domain = domain,
-                        EmailID = string.Empty
-                    },
+                    createUserRequest,
                     commandType: CommandType.StoredProcedure);
             }
         }
 
-        public async Task<LoginResult> UserLoginAsync(string userName, string password, string domain)
+        public async Task<LoginResult> UserLoginAsync(LoginRequest loginRequest)
         {
             using (var connection = new SqlConnection(this._settings.ConnectionString))
             {
                 await connection.OpenAsync();
-                var result = await connection.QueryAsync<AuthorizedUserResult>(
+                var result = await connection.QueryAsync<LoginResult>(
                     "Admin.dbo.CheckRegisteredUser",
-                    new
-                    {
-                        UserName = userName,
-                        Password = password,
-                        Domain = domain
-                    },
+                    loginRequest,
                     commandType: CommandType.StoredProcedure);
 
-                if (result.Any())
-                {
-                    var user = result.FirstOrDefault();
-                    if (user == null) return null;
-                    return new LoginResult()
-                    {
-                        IsAuthenticated = !string.IsNullOrEmpty(Convert.ToString(user.UserID)),
-                        UserID = user.UserID,
-                        AccessToken = user.ApiKey,
-                        UserRole = user.UserRole
-                    };
-                }
-                else
-                    return new LoginResult()
-                    {
-                        IsAuthenticated = false,
-                        UserID = Guid.Empty,
-                        AccessToken = Guid.Empty,
-                        UserRole = 0
-                    };
+                return result.Any() ? result.FirstOrDefault() : null;
             }
         }
         #endregion

@@ -842,11 +842,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj",
+      "projectUniqueName": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj",
       "projectName": "ServiceApi.Api.Model",
-      "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj",
+      "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj",
       "packagesPath": "C:\\Users\\anand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\obj\\",
+      "outputPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Api.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

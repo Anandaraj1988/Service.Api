@@ -1,7 +1,19 @@
-Drop Procedure CreateUser
+USE [Admin]
 GO
 
-CREATE PROCEDURE CreateUser 
+/****** Object:  StoredProcedure [dbo].[CreateUser]    Script Date: 29-11-2020 19:41:09 ******/
+DROP PROCEDURE [dbo].[CreateUser]
+GO
+
+/****** Object:  StoredProcedure [dbo].[CreateUser]    Script Date: 29-11-2020 19:41:09 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[CreateUser] 
 	@UserID UNIQUEIDENTIFIER,
 	@UserName varchar(50),
 	@Password varchar(50),
@@ -20,8 +32,8 @@ BEGIN
 
 	IF @Count = 0
 	BEGIN
-	INSERT INTO dbo.[User] (UserID, UserName, [Password], UserRole, EmailID)
-	VALUES(@UserID, @UserName, @Password, @UserRole, @EmailID)
+	INSERT INTO dbo.[User] (UserID, UserName, [Password], AccessToken, UserRole, EmailID)
+	VALUES(@UserID, @UserName, @Password,(@UserName+'|'+@Domain+'|'+(select replace(convert(varchar, getdate(),101),'/','') + replace(convert(varchar, getdate(),108),':',''))), @UserRole, @EmailID)
 	END
 
 	DECLARE @DomainCount int
@@ -43,3 +55,5 @@ BEGIN
 
 END
 GO
+
+

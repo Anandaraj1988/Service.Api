@@ -31,9 +31,9 @@ namespace ServiceApi.Api.Controllers.V1
         /// UserRole  => int => 100, 101, 102
         /// </param>
         /// <returns>Created User</returns>
-        [HttpPost("AddUser")]
+        [HttpPost("Create")]
         public async Task<IEnumerable<UserResult>> CreateUser([FromQuery] CreateUserRequest request) => 
-            await serviceProvider.CreateUserAsync(request.UserName, request.Password, request.Domain, request.UserRole);
+            await serviceProvider.CreateUserAsync(request);
 
         /// <summary>
         /// LoginRequest
@@ -46,6 +46,6 @@ namespace ServiceApi.Api.Controllers.V1
         /// <returns>Return true/false</returns>
         [HttpGet("Login")]
         public async Task<LoginResult> UserLogin([FromQuery] LoginRequest request) =>
-            await serviceProvider.UserLoginAsync(request.UserName, request.Password, request.Domain);
+            await serviceProvider.UserLoginAsync(request);
     }
 }

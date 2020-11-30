@@ -1,7 +1,11 @@
+USE [Admin]
+GO
+
+/****** Object:  Table [dbo].[User]    Script Date: 29-11-2020 19:06:29 ******/
 DROP TABLE [dbo].[User]
 GO
 
-/****** Object:  Table [dbo].[User]    Script Date: 11-10-2020 16:16:02 ******/
+/****** Object:  Table [dbo].[User]    Script Date: 29-11-2020 19:06:29 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -12,9 +16,10 @@ CREATE TABLE [dbo].[User](
 	[UserID] [uniqueidentifier] NOT NULL,
 	[UserName] [varchar](50) NOT NULL,
 	[Password] [varchar](50) NOT NULL,
+	[AccessToken] [varchar](50) NOT NULL,
 	[EmailID] [varchar](75) NULL,
 	[UserRole] [int] NULL,
-	[SuperAdmin] [uniqueidentifier] NULL
+	[SuperAdmin] [uniqueidentifier] NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[UserID] ASC

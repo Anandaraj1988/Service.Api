@@ -10,7 +10,7 @@ namespace ServiceApi.Api.Controllers.V1
     [ApiKeyAuth]
     public class SecretController : ControllerBase
     {
-        [HttpGet("secret")]
+        [HttpGet]
         public IActionResult GetSecret()
         {
             return Ok("I have no Secret");

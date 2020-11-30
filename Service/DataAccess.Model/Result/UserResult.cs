@@ -8,6 +8,6 @@ namespace ServiceApi.DataAccess.Model
         public string UserName { get; set; }
         public int UserRole { get; set; }
         public string DomainName { get; set; }
-        public Guid ApiKey { get; set; }
+        public string AccessToken { get; set; }
     }
 }

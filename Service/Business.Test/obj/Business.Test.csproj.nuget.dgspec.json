@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business.Test\\Business.Test.csproj": {}
+    "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Business.Test\\Business.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business.Test\\Business.Test.csproj": {
+    "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Business.Test\\Business.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business.Test\\Business.Test.csproj",
+        "projectUniqueName": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Business.Test\\Business.Test.csproj",
         "projectName": "Business.Test",
-        "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business.Test\\Business.Test.csproj",
+        "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Business.Test\\Business.Test.csproj",
         "packagesPath": "C:\\Users\\anand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business.Test\\obj\\",
+        "outputPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Business.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

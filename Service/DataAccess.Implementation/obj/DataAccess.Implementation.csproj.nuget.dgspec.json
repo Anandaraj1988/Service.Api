@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Implementation\\DataAccess.Implementation.csproj": {}
+    "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Implementation\\DataAccess.Implementation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj": {
+    "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj",
+        "projectUniqueName": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj",
         "projectName": "ServiceApi.Api.Model",
-        "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj",
+        "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj",
         "packagesPath": "C:\\Users\\anand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\obj\\",
+        "outputPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Api.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business\\Business.csproj": {
+    "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business\\Business.csproj",
+        "projectUniqueName": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Business\\Business.csproj",
         "projectName": "ServiceApi.Business",
-        "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business\\Business.csproj",
+        "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\anand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business\\obj\\",
+        "outputPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -91,11 +91,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj": {
-                "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj"
+              "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj": {
+                "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Api.Model\\Api.Model.csproj"
               },
-              "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj": {
-                "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj"
+              "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj": {
+                "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj"
               }
             }
           }
@@ -156,14 +156,14 @@
         }
       }
     },
-    "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Implementation\\DataAccess.Implementation.csproj": {
+    "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Implementation\\DataAccess.Implementation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Implementation\\DataAccess.Implementation.csproj",
+        "projectUniqueName": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Implementation\\DataAccess.Implementation.csproj",
         "projectName": "ServiceApi.DataAccess.Implementation",
-        "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Implementation\\DataAccess.Implementation.csproj",
+        "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Implementation\\DataAccess.Implementation.csproj",
         "packagesPath": "C:\\Users\\anand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Implementation\\obj\\",
+        "outputPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Implementation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -182,14 +182,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\Business\\Business.csproj"
+              "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Business\\Business.csproj": {
+                "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\Business\\Business.csproj"
               },
-              "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj": {
-                "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj"
+              "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj": {
+                "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj"
               },
-              "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj": {
-                "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj"
+              "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj": {
+                "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj"
               }
             }
           }
@@ -238,14 +238,14 @@
         }
       }
     },
-    "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj": {
+    "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj",
+        "projectUniqueName": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj",
         "projectName": "ServiceApi.DataAccess.Interface",
-        "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj",
+        "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\DataAccess.Interface.csproj",
         "packagesPath": "C:\\Users\\anand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\obj\\",
+        "outputPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Interface\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -264,8 +264,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj": {
-                "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj"
+              "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj": {
+                "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj"
               }
             }
           }
@@ -297,14 +297,14 @@
         }
       }
     },
-    "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj": {
+    "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj",
+        "projectUniqueName": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj",
         "projectName": "ServiceApi.DataAccess.Model",
-        "projectPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj",
+        "projectPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\DataAccess.Model.csproj",
         "packagesPath": "C:\\Users\\anand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anand\\Desktop\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\obj\\",
+        "outputPath": "E:\\DesktopFiles\\JRSolutions\\ServiceApi\\Service\\DataAccess.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

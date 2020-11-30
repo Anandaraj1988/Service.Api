@@ -7,3 +7,12 @@ C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Api.Model\obj\Debug\netcor
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Api.Model\obj\Debug\netcoreapp3.1\ServiceApi.Api.Model.pdb
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Api.Model\obj\Debug\netcoreapp3.1\Api.Model.csproj.CoreCompileInputs.cache
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\Api.Model\obj\Debug\netcoreapp3.1\Api.Model.csprojAssemblyReference.cache
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\Api.Model\bin\Debug\netcoreapp3.1\ServiceApi.Api.Model.deps.json
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\Api.Model\bin\Debug\netcoreapp3.1\ServiceApi.Api.Model.dll
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\Api.Model\bin\Debug\netcoreapp3.1\ServiceApi.Api.Model.pdb
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\Api.Model\obj\Debug\netcoreapp3.1\Api.Model.AssemblyInfoInputs.cache
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\Api.Model\obj\Debug\netcoreapp3.1\Api.Model.AssemblyInfo.cs
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\Api.Model\obj\Debug\netcoreapp3.1\Api.Model.csproj.CoreCompileInputs.cache
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\Api.Model\obj\Debug\netcoreapp3.1\ServiceApi.Api.Model.dll
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\Api.Model\obj\Debug\netcoreapp3.1\ServiceApi.Api.Model.pdb
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\Api.Model\obj\Debug\netcoreapp3.1\Api.Model.csprojAssemblyReference.cache

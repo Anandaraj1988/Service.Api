@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using System.Threading.Tasks;
-using System;
 
 namespace ServiceApi.Business.Implementation
 {
     using Api.Model.V1;
     using Business.Interface;
     using DataAccess.Interface;
+    using Data = DataAccess.Model;
 
     public class DomainDataService : IDomainDataService
     {
@@ -19,9 +19,10 @@ namespace ServiceApi.Business.Implementation
             domainDataProvider = _DomainDataProvider;
         }
 
-        public async Task<Domain> CreateDomainAsync(string name, Guid apiKey)
+        public async Task<Domain> CreateDomainAsync(CreateDomainRequest createDomainRequest)
         {
-            var domain = await domainDataProvider.CreateDomainAsync(name, apiKey);
+            var request = mapper.Map<Data.CreateDomainRequest>(createDomainRequest);
+            var domain = await domainDataProvider.CreateDomainAsync(request);
             return mapper.Map<Domain>(domain);
         }
     }

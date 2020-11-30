@@ -1,53 +1,36 @@
 ﻿using AutoMapper;
 using Microsoft.OpenApi.Extensions;
+using ServiceApi.Business.Common;
+using System;
 
 namespace ServiceApi.Business.MappingProfile
 {
     using Data = DataAccess.Model;
-    using BusinessV1 = Api.Model.V1;
+    using Model = Api.Model.V1;
     public class BusinessMappingProfile : Profile
     {
         public BusinessMappingProfile()
         {
             this.ForAllMaps((typeMap, mapConfig) => mapConfig.PreserveReferences());
 
-            #region UserDataService
-            this.GetUserMapping();
-            this.GetLoginResultMapping();
-            #endregion
+            this.CreateMap<Model.CreateDomainRequest, Data.CreateDomainRequest>();
 
-            #region DomainDataService
-            this.GetDomainMapping();
-            #endregion
-        }
+            this.CreateMap<Model.CreateUserRequest, Data.CreateUserRequest>()
+                .ForMember(d => d.Password, o => o.MapFrom(s => (!string.IsNullOrEmpty(s.Password)) ? Helper.EncryptPassword(s.Password) : string.Empty))
+                .ForMember(d => d.UserID, o => o.Ignore())
+                .ForMember(d => d.EmailID, o => o.Ignore());
 
-        private void GetUserMapping()
-        {
-            this.CreateMap<Data.UserResult, BusinessV1.UserResult>()
-                .ForMember(d => d.UserID, o => o.MapFrom(s => s.UserID))
-                .ForMember(d => d.UserName, o => o.MapFrom(s => s.UserName))
-                .ForMember(d => d.UserRole, o => o.MapFrom(s => s.UserRole))
-                .ForMember(d => d.UserRoleName, o => o.MapFrom(s => ((BusinessV1.Enum.UserRole)s.UserRole).GetDisplayName()))
-                .ForMember(d => d.DomainName, o => o.MapFrom(s => s.DomainName))
-                .ForMember(d => d.ApiKey, o => o.MapFrom(s => s.ApiKey));
-        }
+            this.CreateMap<Model.LoginRequest, Data.LoginRequest>()
+                .ForMember(d => d.Password, o => o.MapFrom(s => (!string.IsNullOrEmpty(s.Password)) ? Helper.EncryptPassword(s.Password) : string.Empty));
 
-        private void GetLoginResultMapping()
-        {
-            this.CreateMap<Data.LoginResult, BusinessV1.LoginResult>()
-                .ForMember(d => d.UserID, o => o.MapFrom(s => s.UserID))
-                .ForMember(d => d.IsAuthenticated, o => o.MapFrom(s => s.IsAuthenticated))
-                .ForMember(d => d.AccessToken, o => o.MapFrom(s => s.AccessToken))
-                .ForMember(d => d.UserRole, o => o.MapFrom(s => s.UserRole))
-                .ForMember(d => d.UserRoleName, o => o.MapFrom(s => ((BusinessV1.Enum.UserRole)s.UserRole).GetDisplayName()));
-        }
+            this.CreateMap<Data.Domain, Model.Domain>();
 
-        private void GetDomainMapping()
-        {
-            this.CreateMap<Data.Domain, BusinessV1.Domain>()
-                .ForMember(d => d.DomainID, o => o.MapFrom(s => s.DomainID))
-                .ForMember(d => d.Name, o => o.MapFrom(s => s.Name))
-                .ForMember(d => d.ApiKey, o => o.MapFrom(s => s.ApiKey));
+            this.CreateMap<Data.UserResult, Model.UserResult>()
+                .ForMember(d => d.UserRoleName, o => o.MapFrom(s => ((Model.Enum.UserRole)s.UserRole).GetDisplayName()));
+
+            this.CreateMap<Data.LoginResult, Model.LoginResult>();
+
+            this.CreateMap<Data.Domain, Model.Domain>();
         }
     }
 }

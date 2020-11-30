@@ -7,7 +7,7 @@ namespace ServiceApi.DataAccess.Interface
 
     public interface IUserDataProvider
     {
-        Task<IEnumerable<UserResult>> CreateUserAsync(string userName, string password, string domain, int userRole);
-        Task<LoginResult> UserLoginAsync(string userName, string password, string domain);
+        Task<IEnumerable<UserResult>> CreateUserAsync(CreateUserRequest createUserRequest);
+        Task<LoginResult> UserLoginAsync(LoginRequest loginRequest);
     }
 }

@@ -7,7 +7,7 @@ namespace ServiceApi.Business.Implementation
     using AutoMapper;
     using DataAccess.Interface;
     using Api.Model.V1;
-    using Business.Common;
+    using Data = DataAccess.Model;
 
     public class UserDataService : IUserDataService
     {
@@ -20,21 +20,17 @@ namespace ServiceApi.Business.Implementation
             userDataProvider = _UserDataProvider;
         }
 
-        public async Task<IEnumerable<UserResult>> CreateUserAsync(string userName, string password, string domain, int userRole)
+        public async Task<IEnumerable<UserResult>> CreateUserAsync(CreateUserRequest createUserRequest)
         {
-            if (!string.IsNullOrEmpty(password))
-                password = Helper.EncryptPassword(password);
-
-            var result = await userDataProvider.CreateUserAsync(userName, password, domain, userRole);
+            var request = mapper.Map<Data.CreateUserRequest>(createUserRequest);
+            var result = await userDataProvider.CreateUserAsync(request);
             return mapper.Map<IEnumerable<UserResult>>(result);
         }
 
-        public async Task<LoginResult> UserLoginAsync(string userName, string password, string domain)
+        public async Task<LoginResult> UserLoginAsync(LoginRequest loginRequest)
         {
-            if (!string.IsNullOrEmpty(password))
-                password = Helper.EncryptPassword(password);
-
-            var result = await userDataProvider.UserLoginAsync(userName, password, domain);
+            var request = mapper.Map<Data.LoginRequest>(loginRequest);
+            var result = await userDataProvider.UserLoginAsync(request);
             return mapper.Map<LoginResult>(result);
         }
     }

@@ -10,3 +10,15 @@ C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Interface\bin\D
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Interface\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Model.pdb
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Interface\obj\Debug\netcoreapp3.1\DataAccess.Interface.csprojAssemblyReference.cache
 C:\Users\anand\Desktop\JRSolutions\ServiceApi\Service\DataAccess.Interface\obj\Debug\netcoreapp3.1\DataAccess.Interface.csproj.CopyComplete
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Interface.deps.json
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Interface.dll
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Interface.pdb
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Model.dll
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\bin\Debug\netcoreapp3.1\ServiceApi.DataAccess.Model.pdb
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\obj\Debug\netcoreapp3.1\DataAccess.Interface.csprojAssemblyReference.cache
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\obj\Debug\netcoreapp3.1\DataAccess.Interface.AssemblyInfoInputs.cache
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\obj\Debug\netcoreapp3.1\DataAccess.Interface.AssemblyInfo.cs
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\obj\Debug\netcoreapp3.1\DataAccess.Interface.csproj.CoreCompileInputs.cache
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\obj\Debug\netcoreapp3.1\DataAccess.Interface.csproj.CopyComplete
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\obj\Debug\netcoreapp3.1\ServiceApi.DataAccess.Interface.dll
+E:\DesktopFiles\JRSolutions\ServiceApi\Service\DataAccess.Interface\obj\Debug\netcoreapp3.1\ServiceApi.DataAccess.Interface.pdb

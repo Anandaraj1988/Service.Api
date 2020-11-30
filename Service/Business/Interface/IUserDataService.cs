@@ -6,7 +6,7 @@ namespace ServiceApi.Business.Interface
     using Api.Model.V1;
     public interface IUserDataService
     {
-        Task<IEnumerable<UserResult>> CreateUserAsync(string userName, string password, string domain, int userRole);
-        Task<LoginResult> UserLoginAsync(string userName, string password, string domain);
+        Task<IEnumerable<UserResult>> CreateUserAsync(CreateUserRequest createUserRequest);
+        Task<LoginResult> UserLoginAsync(LoginRequest loginRequest);
     }
 }

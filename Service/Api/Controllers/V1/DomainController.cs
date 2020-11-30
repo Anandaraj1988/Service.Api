@@ -29,8 +29,8 @@ namespace ServiceApi.Api.Controllers.V1
         /// ApiKey => Guid
         /// </param>
         /// <returns>Created User</returns>
-        [HttpPost("AddUser")]
+        [HttpPost("Create")]
         public async Task<Domain> CreateUser([FromQuery] CreateDomainRequest request) =>
-            await serviceProvider.CreateDomainAsync(request.Name, request.ApiKey);
+            await serviceProvider.CreateDomainAsync(request);
     }
 }

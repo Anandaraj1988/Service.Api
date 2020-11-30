@@ -6,5 +6,6 @@ namespace ServiceApi.Api.Model.V1
     {
         public string Name { get; set; }
         public Guid ApiKey { get; set; }
+        public Guid Domain { get; set; } = Guid.Empty;
     }
 }

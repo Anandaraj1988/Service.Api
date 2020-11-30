@@ -22,19 +22,14 @@ namespace ServiceApi.DataAccess.Implementation
         }
 
         #region User Creation Section
-        public async Task<Domain> CreateDomainAsync(string name, Guid apiKey)
+        public async Task<Domain> CreateDomainAsync(CreateDomainRequest createDomainRequest)
         {
             using (var connection = new SqlConnection(this._settings.ConnectionString))
             {
                 await connection.OpenAsync();
                 var resultDomain = await connection.QueryAsync<Domain>(
                     "Admin.dbo.CreateDomain",
-                    new
-                    {
-                        DomainID = Guid.Empty,
-                        Name = name,
-                        ApiKey = apiKey
-                    },
+                    createDomainRequest,
                     commandType: CommandType.StoredProcedure);
 
                 if (resultDomain == null) return null;
